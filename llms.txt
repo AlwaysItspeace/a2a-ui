@@ -1,0 +1,178 @@
+# A2A UI — FROM AI TO AI Component System
+> High-precision, zero-bloat monochrome React components with calibrated Framer Motion spring physics, Tailwind CSS tokens, and Nunito Sans typography.
+
+## Quick CLI Installation
+```bash
+# Initialize in project
+npx @a2a/ui init
+
+# Add a discrete single component
+npx @a2a/ui add button
+npx @a2a/ui add code-block
+npx @a2a/ui add switch
+```
+
+## Discrete Import Patterns
+Always import individual components directly or from `@/components/ui`:
+```tsx
+import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
+import { CodeBlock } from "@/components/ui/code-block";
+import { SearchBar } from "@/components/ui/search-bar";
+import { InputOTP } from "@/components/ui/input-otp";
+import { MetricBarChart } from "@/components/ui/chart";
+```
+
+## Complete Component Index (66 Components)
+
+### 1. Forms & Inputs
+- `button`: Primary, secondary, outline, ghost pill buttons.
+  `import { Button } from "@/components/ui/button";`
+  `<Button variant="default" size="default">Label</Button>`
+- `button-group`: Segmented connected pill buttons.
+  `import { ButtonGroup } from "@/components/ui/button-group";`
+- `checkbox`: Spring-animated checkmark toggle.
+  `import { Checkbox } from "@/components/ui/checkbox";`
+  `<Checkbox checked={checked} onCheckedChange={setChecked} label="Option" />`
+- `switch`: Tactile toggle with centered sliding circular knob.
+  `import { Switch } from "@/components/ui/switch";`
+  `<Switch checked={active} onCheckedChange={setActive} label="Feature" />`
+- `slider`: Range slider with rounded rectangle thumb.
+  `import { Slider } from "@/components/ui/slider";`
+  `<Slider value={val} onChange={setVal} min={0} max={100} />`
+- `input`: Text input with icon addons.
+  `import { Input } from "@/components/ui/input";`
+- `input-group`: Seamless capsule input with prefix/suffix addons.
+  `import { InputGroup } from "@/components/ui/input-group";`
+- `input-otp`: 6-digit 2FA verification input with active ring and blinking cursor.
+  `import { InputOTP } from "@/components/ui/input-otp";`
+  `<InputOTP length={6} value={code} onChange={setCode} />`
+- `search-bar`: Pill search input with shortcut badge and clear action.
+  `import { SearchBar } from "@/components/ui/search-bar";`
+- `textarea`: Multi-line text field with character count.
+  `import { Textarea } from "@/components/ui/textarea";`
+- `select`: Custom dropdown select with checkmarks.
+  `import { Select } from "@/components/ui/select";`
+- `native-select`: Styled HTML native select.
+  `import { NativeSelect } from "@/components/ui/native-select";`
+- `combobox`: Searchable autocomplete combobox.
+  `import { Combobox } from "@/components/ui/combobox";`
+- `radio-group`: Single-choice radio options with centered indicator dot.
+  `import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";`
+- `toggle`: Two-state pill toggle button with spring physics.
+  `import { Toggle } from "@/components/ui/toggle";`
+- `toggle-group`: Segmented toggle options with sliding background pill.
+  `import { ToggleGroup } from "@/components/ui/toggle-group";`
+- `calendar`: Monthly date picker grid.
+  `import { Calendar } from "@/components/ui/calendar";`
+- `date-picker`: Popover date selector.
+  `import { DatePicker } from "@/components/ui/date-picker";`
+- `field`: Form field container with label, asterisk, and validation hint.
+  `import { Field } from "@/components/ui/field";`
+- `label`: Standard typography label.
+  `import { Label } from "@/components/ui/label";`
+- `questionnaire`: Multi-step survey card.
+  `import { Questionnaire } from "@/components/ui/questionnaire";`
+- `attachment`: File upload dropzone with progress indicators.
+  `import { Attachment } from "@/components/ui/attachment";`
+
+### 2. Data Display
+- `avatar`: User portrait image with fallback initials and status dot.
+  `import { Avatar, AvatarGroup } from "@/components/ui/avatar";`
+- `badge`: Status indicator pill (default, secondary, outline, dot, counter).
+  `import { Badge } from "@/components/ui/badge";`
+- `card`: Card surface with header, title, content, footer slots.
+  `import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";`
+- `code-block`: Multi-color syntax highlighter with language dropdown and copy button.
+  `import { CodeBlock } from "@/components/ui/code-block";`
+  `<CodeBlock language="typescript" filename="index.ts" />`
+- `data-table`: Sortable table with search bar and pagination.
+  `import { DataTable } from "@/components/ui/data-table";`
+- `empty`: Empty state container with icon and action button.
+  `import { Empty } from "@/components/ui/empty";`
+- `item`: Minimalist row item with icon, title, description, and badge.
+  `import { Item } from "@/components/ui/item";`
+- `kbd`: Keyboard shortcut pill badge.
+  `import { Kbd } from "@/components/ui/kbd";`
+- `marker`: Status dot with gentle 3s pulse.
+  `import { Marker } from "@/components/ui/marker";`
+- `table`: Standard monochrome table with header and striped rows.
+  `import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from "@/components/ui/table";`
+- `typography`: Typographic scale components (h1, h2, h3, h4, p, lead, code).
+  `import { Typography } from "@/components/ui/typography";`
+
+### 3. Feedback & Status
+- `alert`: Status notification banner.
+  `import { Alert } from "@/components/ui/alert";`
+- `progress`: Standalone rounded-full progress bar.
+  `import { Progress } from "@/components/ui/progress";`
+- `skeleton`: Loading placeholder with shimmer animation.
+  `import { Skeleton } from "@/components/ui/skeleton";`
+- `spinner`: Loading indicators (ring, dots, bars).
+  `import { Spinner } from "@/components/ui/spinner";`
+- `toast`: Imperative toast notification dispatcher (`toast({ title, description })`).
+  `import { toast } from "@/lib/use-toast";`
+
+### 4. Navigation
+- `breadcrumb`: Hierarchical page trail.
+  `import { Breadcrumb } from "@/components/ui/breadcrumb";`
+- `menubar`: Desktop floating menu bar with nested items.
+  `import { Menubar } from "@/components/ui/menubar";`
+- `navigation-menu`: Header text navigation with dropdown flyouts.
+  `import { NavigationMenu } from "@/components/ui/navigation-menu";`
+- `pagination`: Page switcher with active pill indicator.
+  `import { Pagination } from "@/components/ui/pagination";`
+- `sidebar`: App navigation sidebar with active item indicators.
+  `import { Sidebar } from "@/components/ui/sidebar";`
+
+### 5. Overlay & Modals
+- `alert-dialog`: Modal confirmation dialog for destructive actions.
+  `import { AlertDialog } from "@/components/ui/alert-dialog";`
+- `command`: Modern rectangular command palette with search and keyboard navigation.
+  `import { Command } from "@/components/ui/command";`
+- `context-menu`: Cursor-anchored right-click menu.
+  `import { ContextMenu } from "@/components/ui/context-menu";`
+- `dialog`: Modal window with backdrop blur and action slots.
+  `import { Dialog } from "@/components/ui/dialog";`
+- `drawer`: Swipeable bottom sheet with touch drag-to-dismiss physics.
+  `import { Drawer } from "@/components/ui/drawer";`
+- `dropdown-menu`: Trigger-anchored action dropdown.
+  `import { DropdownMenu } from "@/components/ui/dropdown-menu";`
+- `hover-card`: Popover card triggered on cursor hover.
+  `import { HoverCard } from "@/components/ui/hover-card";`
+- `popover`: Floating container anchored to trigger.
+  `import { Popover } from "@/components/ui/popover";`
+- `sheet`: Slide-over side sheet panel.
+  `import { Sheet } from "@/components/ui/sheet";`
+- `tooltip`: Compact black pill tooltip with white text.
+  `import { Tooltip } from "@/components/ui/tooltip";`
+
+### 6. Layout & Structure
+- `accordion`: Collapsible panels with spring height animation.
+  `import { Accordion } from "@/components/ui/accordion";`
+- `aspect-ratio`: Media container with fixed aspect ratio and rounded corners.
+  `import { AspectRatio } from "@/components/ui/aspect-ratio";`
+- `collapsible`: Expandable disclosure panel.
+  `import { Collapsible } from "@/components/ui/collapsible";`
+- `direction`: LTR / RTL text direction container.
+  `import { Direction } from "@/components/ui/direction";`
+- `resizable`: Draggable split-pane layout.
+  `import { Resizable } from "@/components/ui/resizable";`
+- `scroll-area`: Custom scroll container with slim scrollbar.
+  `import { ScrollArea } from "@/components/ui/scroll-area";`
+- `separator`: 1px divider line with optional centered text.
+  `import { Separator } from "@/components/ui/separator";`
+- `tabs`: Tab navigation with sliding active pill indicator.
+  `import { Tabs } from "@/components/ui/tabs";`
+
+### 7. Charts & Metrics
+- `chart`: Recharts wrapper with hover highlights.
+  `import { MetricBarChart, MetricAreaChart, MetricLineChart, MetricDonutChart, MetricRadarChart, Sparkline } from "@/components/ui/chart";`
+
+### 8. Chat & Messaging
+- `bubble`: Speech bubble with sender/receiver tails.
+  `import { Bubble } from "@/components/ui/bubble";`
+- `message`: Developer chat card with avatar and timestamp.
+  `import { Message } from "@/components/ui/message";`
+- `message-scroller`: Auto-scrolling chat message list.
+  `import { MessageScroller } from "@/components/ui/message-scroller";`
