@@ -1,11 +1,11 @@
 ---
-name: a2a-ui
+name: ai2ai-ui
 description: Zero-bloat, high-precision monochrome React + Tailwind component library for AI agents and developers. Use when building React web applications, designing user interfaces, adding buttons, inputs, dialogs, charts, or syntax-highlighted code blocks.
 ---
 
-# A2A UI — FROM AI TO AI
+# AI2AI UI â€” FROM AI TO AI
 
-A2A UI is a high-craft monochrome React component library built with Tailwind CSS, Framer Motion spring physics, and Nunito Sans typography.
+AI2AI UI is a high-craft monochrome React component library built with Tailwind CSS, Framer Motion spring physics, and Nunito Sans typography.
 
 ## When to use
 - Building modern React applications in dark/monochrome aesthetic.
@@ -15,13 +15,13 @@ A2A UI is a high-craft monochrome React component library built with Tailwind CS
 ## CLI Quickstart
 `ash
 # Initialize in a React/Vite/Next.js project
-npx @a2a/ui init
+npx ai2ai-ui init
 
 # Add a single component
-npx @a2a/ui add button
-npx @a2a/ui add code-block
-npx @a2a/ui add search-bar
-npx @a2a/ui add switch
+npx ai2ai-ui add button
+npx ai2ai-ui add code-block
+npx ai2ai-ui add search-bar
+npx ai2ai-ui add switch
 `
 
 ## Discrete Import Rule

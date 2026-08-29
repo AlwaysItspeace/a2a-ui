@@ -7,8 +7,6 @@ import {
   LayoutGrid,
   X,
   FileText,
-  Bot,
-  Sparkles,
 } from "lucide-react";
 import { Kbd } from "@/components/ui/kbd";
 import { motion } from "framer-motion";
@@ -46,11 +44,11 @@ export function Header({
             className="flex items-center gap-3 cursor-pointer group"
           >
             <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-white text-black font-black text-sm tracking-tighter shadow-sm group-hover:scale-105 transition-transform">
-              A
+              AI
             </div>
             <div className="flex items-center gap-2">
               <span className="font-black text-sm tracking-tight text-white">
-                A2A UI
+                AI2AI UI
               </span>
               <span className="font-mono text-[10px] text-zinc-400 font-bold bg-[#16161b] px-2 py-0.5 rounded-full border border-zinc-800">
                 FROM AI TO AI
@@ -153,7 +151,7 @@ export function Header({
               onClick={onOpenCommand}
               className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer flex items-center"
             >
-              <Kbd keys={["?", "K"]} />
+              <Kbd keys={["⌘", "K"]} />
             </div>
           )}
         </div>

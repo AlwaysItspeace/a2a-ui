@@ -1,15 +1,16 @@
-# A2A UI — FROM AI TO AI Component System
+# AI2AI UI ï¿½ FROM AI TO AI Component System
 > High-precision, zero-bloat monochrome React components with calibrated Framer Motion spring physics, Tailwind CSS tokens, and Nunito Sans typography.
 
 ## Quick CLI Installation
 ```bash
 # Initialize in project
-npx @a2a/ui init
+npx ai2ai-ui init
 
 # Add a discrete single component
-npx @a2a/ui add button
-npx @a2a/ui add code-block
-npx @a2a/ui add switch
+npx ai2ai-ui add button
+npx ai2ai-ui add code-block
+npx ai2ai-ui add search-bar
+npx ai2ai-ui add switch
 ```
 
 ## Discrete Import Patterns
@@ -28,25 +29,20 @@ import { MetricBarChart } from "@/components/ui/chart";
 ### 1. Forms & Inputs
 - `button`: Primary, secondary, outline, ghost pill buttons.
   `import { Button } from "@/components/ui/button";`
-  `<Button variant="default" size="default">Label</Button>`
 - `button-group`: Segmented connected pill buttons.
   `import { ButtonGroup } from "@/components/ui/button-group";`
 - `checkbox`: Spring-animated checkmark toggle.
   `import { Checkbox } from "@/components/ui/checkbox";`
-  `<Checkbox checked={checked} onCheckedChange={setChecked} label="Option" />`
 - `switch`: Tactile toggle with centered sliding circular knob.
   `import { Switch } from "@/components/ui/switch";`
-  `<Switch checked={active} onCheckedChange={setActive} label="Feature" />`
 - `slider`: Range slider with rounded rectangle thumb.
   `import { Slider } from "@/components/ui/slider";`
-  `<Slider value={val} onChange={setVal} min={0} max={100} />`
 - `input`: Text input with icon addons.
   `import { Input } from "@/components/ui/input";`
 - `input-group`: Seamless capsule input with prefix/suffix addons.
   `import { InputGroup } from "@/components/ui/input-group";`
 - `input-otp`: 6-digit 2FA verification input with active ring and blinking cursor.
   `import { InputOTP } from "@/components/ui/input-otp";`
-  `<InputOTP length={6} value={code} onChange={setCode} />`
 - `search-bar`: Pill search input with shortcut badge and clear action.
   `import { SearchBar } from "@/components/ui/search-bar";`
 - `textarea`: Multi-line text field with character count.
@@ -85,7 +81,6 @@ import { MetricBarChart } from "@/components/ui/chart";
   `import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";`
 - `code-block`: Multi-color syntax highlighter with language dropdown and copy button.
   `import { CodeBlock } from "@/components/ui/code-block";`
-  `<CodeBlock language="typescript" filename="index.ts" />`
 - `data-table`: Sortable table with search bar and pagination.
   `import { DataTable } from "@/components/ui/data-table";`
 - `empty`: Empty state container with icon and action button.

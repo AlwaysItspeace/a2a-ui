@@ -21,10 +21,8 @@ import {
   Shield,
   ChevronRight,
   FileCode,
-  Layers,
   Cpu,
   Bot,
-  Command,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { ComponentMeta } from "@/types";
@@ -46,7 +44,7 @@ export function LandingView({
   const [liveOtp, setLiveOtp] = React.useState("840219");
   const [liveBtnGroup, setLiveBtnGroup] = React.useState("months");
 
-  const handleCopyCli = (cmd: string = "npx @a2a/ui init") => {
+  const handleCopyCli = (cmd: string = "npx ai2ai-ui init") => {
     navigator.clipboard.writeText(cmd);
     setCopiedCli(true);
     toast({
@@ -80,8 +78,8 @@ export function LandingView({
           onClick={() => onNavigateToDocs()}
         >
           <Bot className="h-3.5 w-3.5 text-white" />
-          <span>A2A UI v1.0 � Architecture Specification</span>
-          <span className="text-zinc-600">�</span>
+          <span>AI2AI UI v1.0 — Architecture Specification</span>
+          <span className="text-zinc-600">•</span>
           <span className="text-white font-mono">{components.length} Components</span>
           <ChevronRight className="h-3.5 w-3.5 text-zinc-500" />
         </motion.div>
@@ -147,12 +145,12 @@ export function LandingView({
               <div className="h-3 w-3 rounded-full bg-yellow-500/80" />
               <div className="h-3 w-3 rounded-full bg-green-500/80" />
               <span className="ml-2 text-zinc-400 font-bold text-[11px]">
-                bash � a2a-ui installer
+                bash — ai2ai-ui installer
               </span>
             </div>
             <button
               type="button"
-              onClick={() => handleCopyCli("npx @a2a/ui init")}
+              onClick={() => handleCopyCli("npx ai2ai-ui init")}
               className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1c1c22] border border-zinc-800 text-zinc-300 hover:text-white transition-colors"
             >
               {copiedCli ? (
@@ -173,37 +171,37 @@ export function LandingView({
           <div className="p-6 space-y-2.5 leading-relaxed overflow-x-auto text-[12px]">
             <div className="flex items-center gap-2">
               <span className="text-emerald-400 font-bold">$</span>
-              <span className="text-white font-bold">npx @a2a/ui init</span>
+              <span className="text-white font-bold">npx ai2ai-ui init</span>
             </div>
             <div className="text-zinc-500">
-              +------------------------------------------------------------+
+              ┌────────────────────────────────────────────────────────────┐
             </div>
             <div className="text-zinc-300">
-              �  <span className="bg-white text-black px-1.5 py-0.5 rounded font-extrabold">A2A UI</span>  �  <span className="text-cyan-400 font-bold">FROM AI TO AI</span>                            �
+              │  <span className="bg-white text-black px-1.5 py-0.5 rounded font-extrabold">AI2AI UI</span>  —  <span className="text-cyan-400 font-bold">FROM AI TO AI</span>                            │
             </div>
             <div className="text-zinc-500">
-              +------------------------------------------------------------+
+              └────────────────────────────────────────────────────────────┘
             </div>
             <div className="text-emerald-400 font-bold pt-1">
-              ? [1/4] <span className="text-zinc-300 font-normal">Found <span className="text-cyan-300">tailwind.config.js</span> & <span className="text-cyan-300">index.css</span></span>
+              ✓ [1/4] <span className="text-zinc-300 font-normal">Found <span className="text-cyan-300">tailwind.config.js</span> & <span className="text-cyan-300">index.css</span></span>
             </div>
             <div className="text-emerald-400 font-bold">
-              ? [2/4] <span className="text-zinc-300 font-normal">Configured global <span className="text-purple-300">--radius: 1.25rem</span> token</span>
+              ✓ [2/4] <span className="text-zinc-300 font-normal">Configured global <span className="text-purple-300">--radius: 1.25rem</span> token</span>
             </div>
             <div className="text-emerald-400 font-bold">
-              ? [3/4] <span className="text-zinc-300 font-normal">Installed peer dependencies: <span className="text-amber-300">framer-motion lucide-react clsx tailwind-merge</span></span>
+              ✓ [3/4] <span className="text-zinc-300 font-normal">Installed peer dependencies: <span className="text-amber-300">framer-motion lucide-react clsx tailwind-merge</span></span>
             </div>
             <div className="text-emerald-400 font-bold">
-              ? [4/4] <span className="text-zinc-300 font-normal">Created <span className="text-cyan-300">src/components/ui</span> and <span className="text-cyan-300">src/lib/utils.ts</span></span>
+              ✓ [4/4] <span className="text-zinc-300 font-normal">Created <span className="text-cyan-300">src/components/ui</span> and <span className="text-cyan-300">src/lib/utils.ts</span></span>
             </div>
             <div className="pt-2 text-zinc-400">
-              <span className="text-green-400 font-bold">? Success:</span> Ready to add discrete components:
+              <span className="text-green-400 font-bold">✔ Success:</span> Ready to add discrete components:
             </div>
             <div className="text-zinc-400 pl-4">
-              <span className="text-purple-400">$</span> npx @a2a/ui add button
+              <span className="text-purple-400">$</span> npx ai2ai-ui add button
             </div>
             <div className="text-zinc-400 pl-4">
-              <span className="text-purple-400">$</span> npx @a2a/ui add code-block
+              <span className="text-purple-400">$</span> npx ai2ai-ui add code-block
             </div>
           </div>
         </div>
@@ -322,7 +320,7 @@ export function LandingView({
               <Item
                 icon={<Terminal className="h-4 w-4" />}
                 title="k8s-ingress-prod"
-                description="14.8k req/s � 99.99% uptime"
+                description="14.8k req/s • 99.99% uptime"
                 badge={<Badge size="sm">Healthy</Badge>}
                 action={<Button size="xs" variant="secondary">Inspect</Button>}
               />
@@ -412,7 +410,7 @@ export function LandingView({
           <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-white text-black font-black text-xs">
             A
           </div>
-          <span>A2A UI � FROM AI TO AI (MIT License)</span>
+          <span>AI2AI UI — FROM AI TO AI (MIT License)</span>
         </div>
 
         <div className="flex items-center gap-6 text-zinc-400">
@@ -439,7 +437,7 @@ export function LandingView({
             llms.txt
           </a>
           <span className="text-zinc-600">|</span>
-          <span className="text-zinc-500">Press ?K for commands</span>
+          <span className="text-zinc-500">Press ⌘K for commands</span>
         </div>
       </footer>
     </div>

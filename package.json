@@ -1,13 +1,41 @@
 {
-  "name": "@a2a/ui",
+  "name": "ai2ai-ui",
   "version": "1.0.0",
   "description": "FROM AI TO AI — High-precision monochrome React + Tailwind component ecosystem",
   "author": "duckky-green",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlwaysItspeace/a2a-ui.git"
+  },
+  "homepage": "https://github.com/AlwaysItspeace/a2a-ui#readme",
+  "bugs": {
+    "url": "https://github.com/AlwaysItspeace/a2a-ui/issues"
+  },
   "bin": {
-    "a2a-ui": "./bin/cli.js"
+    "ai2ai-ui": "./bin/cli.js"
   },
   "type": "module",
+  "files": [
+    "bin",
+    "src/components/ui",
+    "src/lib",
+    "llms.txt",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "ui",
+    "ai2ai",
+    "components",
+    "tailwind",
+    "framer-motion",
+    "design-system",
+    "ai",
+    "shadcn",
+    "monochrome",
+    "from-ai-to-ai"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

@@ -15,12 +15,8 @@ import {
   Code2,
   Eye,
   Search,
-  ExternalLink,
-  Layers,
-  Sparkles,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
 
 export interface ComponentDocsViewProps {
   initialComponentId?: string;
@@ -86,7 +82,6 @@ export function ComponentDocsView({
   const [selectedId, setSelectedId] = React.useState(initialComponentId);
   const [sidebarSearch, setSidebarSearch] = React.useState("");
   const [activeTab, setActiveTab] = React.useState<"preview" | "code">("preview");
-  const [packageManager, setPackageManager] = React.useState<"cli" | "npm" | "pnpm" | "bun">("cli");
   const [copiedCode, setCopiedCode] = React.useState(false);
 
   const selectedMeta = COMPONENT_REGISTRY.find((c) => c.id === selectedId) || COMPONENT_REGISTRY[0];
@@ -280,18 +275,18 @@ export default function Example() {
             Installation
           </h2>
           <p className="text-xs text-zinc-400">
-            Install this discrete component into your project via the A2A UI CLI:
+            Install this discrete component into your project via the AI2AI UI CLI:
           </p>
 
           <div className="rounded-2xl border border-zinc-800/80 bg-[#121215] p-3 flex items-center justify-between font-mono text-xs text-zinc-200">
             <div className="flex items-center gap-2">
               <Terminal className="h-4 w-4 text-zinc-500" />
-              <code>npx @a2a/ui add {selectedMeta.id}</code>
+              <code>npx ai2ai-ui add {selectedMeta.id}</code>
             </div>
             <Button
               size="xs"
               variant="secondary"
-              onClick={() => handleCopyCode(`npx @a2a/ui add ${selectedMeta.id}`)}
+              onClick={() => handleCopyCode(`npx ai2ai-ui add ${selectedMeta.id}`)}
             >
               Copy
             </Button>

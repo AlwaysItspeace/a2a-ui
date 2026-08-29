@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * A2A UI — FROM AI TO AI Component CLI
+ * AI2AI UI — FROM AI TO AI Component CLI
  * Zero-dependency colorful command-line interface.
  */
 
@@ -31,7 +31,7 @@ const colors = {
 const BANNER = `
 ${colors.bold}${colors.white}┌────────────────────────────────────────────────────────────┐
 │                                                            │
-│   ${colors.bgWhite}${colors.black}  A2A UI  ${colors.reset}${colors.bold}${colors.white}  —  ${colors.cyan}FROM AI TO AI${colors.white}                            │
+│   ${colors.bgWhite}${colors.black}  AI2AI UI  ${colors.reset}${colors.bold}${colors.white}  —  ${colors.cyan}FROM AI TO AI${colors.white}                          │
 │   ${colors.dim}Autonomous, high-precision React component system         ${colors.reset}${colors.bold}${colors.white}│
 │                                                            │
 └────────────────────────────────────────────────────────────┘${colors.reset}
@@ -56,17 +56,17 @@ const targetComponent = args[1];
 console.log(BANNER);
 
 if (command === "init") {
-  console.log(`${colors.bold}Initializing A2A UI in current workspace...${colors.reset}\n`);
+  console.log(`${colors.bold}Initializing AI2AI UI in current workspace...${colors.reset}\n`);
   
   logStep("1/4", `Checking ${colors.cyan}tailwind.config.js${colors.reset} configuration...`);
   logStep("2/4", `Registering ${colors.magenta}--radius: 1.25rem${colors.reset} global design token...`);
-  logStep("3/4", `Installing peer dependencies (${colors.yellow}framer-motion lucide-react clsx tailwind-merge${colors.reset})...`);
+  logStep("3/4", `Installing peer dependencies (${colors.yellow}framer-motion lucide-react clsx tailwind-merge recharts${colors.reset})...`);
   logStep("4/4", `Scaffolding ${colors.cyan}src/components/ui${colors.reset} and ${colors.cyan}src/lib/utils.ts${colors.reset}...`);
 
-  logSuccess(`A2A UI initialized successfully! Run ${colors.bold}${colors.cyan}npx a2a-ui add button${colors.reset} to add components.`);
+  logSuccess(`AI2AI UI initialized successfully! Run ${colors.bold}${colors.cyan}npx ai2ai-ui add button${colors.reset} to add components.`);
 } else if (command === "add") {
   if (!targetComponent) {
-    console.log(` ${colors.red}${colors.bold}Error:${colors.reset} Please specify a component name.\n Example: ${colors.cyan}npx a2a-ui add button${colors.reset}\n`);
+    console.log(` ${colors.red}${colors.bold}Error:${colors.reset} Please specify a component name.\n Example: ${colors.cyan}npx ai2ai-ui add button${colors.reset}\n`);
     process.exit(1);
   }
 
@@ -77,7 +77,7 @@ if (command === "init") {
 
   logSuccess(`Component ${colors.bold}${targetComponent}${colors.reset} installed ready to import:\n  ${colors.dim}import { ${targetComponent.charAt(0).toUpperCase() + targetComponent.slice(1)} } from "@/components/ui/${targetComponent}";${colors.reset}`);
 } else if (command === "list") {
-  console.log(`${colors.bold}Available 66 components in @a2a/ui:${colors.reset}\n`);
+  console.log(`${colors.bold}Available 66 components in ai2ai-ui:${colors.reset}\n`);
   const comps = [
     "accordion", "alert", "alert-dialog", "aspect-ratio", "attachment", "avatar",
     "badge", "breadcrumb", "bubble", "button", "button-group", "calendar",
@@ -93,10 +93,10 @@ if (command === "init") {
   ];
   
   console.log(comps.map(c => `  ${colors.cyan}•${colors.reset} ${c}`).join("\n"));
-  console.log(`\nInstall any component via: ${colors.bold}${colors.cyan}npx a2a-ui add <name>${colors.reset}\n`);
+  console.log(`\nInstall any component via: ${colors.bold}${colors.cyan}npx ai2ai-ui add <name>${colors.reset}\n`);
 } else {
   console.log(`${colors.bold}Usage:${colors.reset}`);
-  console.log(`  ${colors.cyan}npx a2a-ui init${colors.reset}            Initialize project with tokens & configuration`);
-  console.log(`  ${colors.cyan}npx a2a-ui add <component>${colors.reset} Install a single discrete component`);
-  console.log(`  ${colors.cyan}npx a2a-ui list${colors.reset}            List all 66 available components\n`);
+  console.log(`  ${colors.cyan}npx ai2ai-ui init${colors.reset}            Initialize project with tokens & configuration`);
+  console.log(`  ${colors.cyan}npx ai2ai-ui add <component>${colors.reset} Install a single discrete component`);
+  console.log(`  ${colors.cyan}npx ai2ai-ui list${colors.reset}            List all 66 available components\n`);
 }

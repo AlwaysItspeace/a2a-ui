@@ -3,11 +3,9 @@ import {
   CodeBlock,
   Badge,
   Button,
-  Tabs,
   Accordion,
 } from "@/components/ui";
 import { toast } from "@/lib/use-toast";
-import { Copy, Check, Terminal, FileCode, Layers, Sparkles } from "lucide-react";
 
 export function DocsView() {
   const [copied, setCopied] = React.useState(false);
@@ -25,10 +23,10 @@ export function DocsView() {
       <div className="space-y-2 border-b border-zinc-800/80 pb-6">
         <Badge variant="outline">Documentation & Reference</Badge>
         <h1 className="text-3xl font-black text-white tracking-tight">
-          Getting Started with MONO UI
+          Getting Started with AI2AI UI
         </h1>
         <p className="text-sm text-zinc-400">
-          A zero-bloat, copy-paste React component library styled with Tailwind CSS and Nunito Sans typography.
+          A zero-bloat, copy-paste React component library styled with Tailwind CSS, Framer Motion spring physics, and Nunito Sans typography.
         </p>
       </div>
 
@@ -39,11 +37,29 @@ export function DocsView() {
           Run the initialization command in your Vite, Next.js, or Remix project:
         </p>
         <div className="p-4 rounded-2xl bg-[#141418] border border-zinc-800/80 flex items-center justify-between font-mono text-xs text-zinc-200">
-          <code>npx @mono/ui init</code>
+          <code>npx ai2ai-ui init</code>
           <Button
             size="xs"
             variant="secondary"
-            onClick={() => copyCommand("npx @mono/ui init")}
+            onClick={() => copyCommand("npx ai2ai-ui init")}
+          >
+            Copy
+          </Button>
+        </div>
+      </section>
+
+      {/* Adding Discrete Components */}
+      <section className="space-y-4">
+        <h2 className="text-xl font-bold text-white">2. Add Discrete Components</h2>
+        <p className="text-xs text-zinc-400">
+          Pull only the components you need directly into your workspace:
+        </p>
+        <div className="p-4 rounded-2xl bg-[#141418] border border-zinc-800/80 flex items-center justify-between font-mono text-xs text-zinc-200">
+          <code>npx ai2ai-ui add button code-block switch search-bar</code>
+          <Button
+            size="xs"
+            variant="secondary"
+            onClick={() => copyCommand("npx ai2ai-ui add button code-block switch search-bar")}
           >
             Copy
           </Button>
@@ -52,7 +68,7 @@ export function DocsView() {
 
       {/* Manual Setup Guide */}
       <section className="space-y-4">
-        <h2 className="text-xl font-bold text-white">2. Manual Installation</h2>
+        <h2 className="text-xl font-bold text-white">3. Manual Installation</h2>
         <p className="text-xs text-zinc-400">
           Install the required peer dependencies:
         </p>
@@ -70,7 +86,7 @@ export function DocsView() {
 
       {/* Tailwind & CSS Configuration */}
       <section className="space-y-4">
-        <h2 className="text-xl font-bold text-white">3. Configure Tailwind & Font</h2>
+        <h2 className="text-xl font-bold text-white">4. Configure Tailwind & Font</h2>
         <p className="text-xs text-zinc-400">
           Add the `--radius` CSS variable and Nunito Sans font family in your `tailwind.config.js`:
         </p>
@@ -101,7 +117,7 @@ export default {
 
       {/* Utility Helper */}
       <section className="space-y-4">
-        <h2 className="text-xl font-bold text-white">4. Class Utility (`cn`)</h2>
+        <h2 className="text-xl font-bold text-white">5. Class Utility (`cn`)</h2>
         <p className="text-xs text-zinc-400">
           Create `src/lib/utils.ts` to merge Tailwind classes cleanly:
         </p>
@@ -125,8 +141,8 @@ export function cn(...inputs: ClassValue[]) {
           items={[
             {
               id: "faq-1",
-              title: "Can I use MONO UI in commercial projects?",
-              content: "Yes, MONO UI is released under the MIT License. You can use it in personal, open source, and commercial apps without restriction.",
+              title: "Can I use AI2AI UI in commercial projects?",
+              content: "Yes, AI2AI UI is released under the MIT License. You can use it in personal, open source, and commercial apps without restriction.",
             },
             {
               id: "faq-2",
