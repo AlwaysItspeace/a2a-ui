@@ -15,7 +15,7 @@
 
 <br />
 
-[**Explore Documentation**](https://github.com/AlwaysItspeace/a2a-ui) � [**llms.txt Specification**](./llms.txt) � [**Agent Skill Guide**](./skills/ai2ai-ui/SKILL.md)
+[**Explore Documentation**](https://github.com/AlwaysItspeace/a2a-ui)  [**llms.txt Specification**](./llms.txt)  [**Agent Skill Guide**](./skills/ai2ai-ui/SKILL.md)
 
 </div>
 
