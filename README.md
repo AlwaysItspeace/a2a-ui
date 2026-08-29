@@ -1,10 +1,10 @@
 <div align="center">
 
-# ? AI2AI UI
+# AI2AI UI
 
 ### **FROM AI TO AI.**
 
-**A high-precision monochrome React + Tailwind component ecosystem engineered for AI agents, developers, and autonomous design pipelines.**
+**React + Tailwind UI Library For AI Agents**
 
 [![npm version](https://img.shields.io/npm/v/ai2ai-ui?color=white&labelColor=black&logo=npm)](https://www.npmjs.com/package/ai2ai-ui)
 [![License: MIT](https://img.shields.io/badge/License-MIT-white.svg?labelColor=black)](https://opensource.org/licenses/MIT)
@@ -21,7 +21,7 @@
 
 ---
 
-## ? Instant CLI Quickstart
+## Instant CLI Quickstart
 
 Install **AI2AI UI** in any React, Vite, Next.js, or Remix project:
 
@@ -39,28 +39,7 @@ npx ai2ai-ui add input-otp
 
 ---
 
-## ??? Colorful Terminal Preview
-
-```ansi
-+------------------------------------------------------------+
-�                                                            �
-�     AI2AI UI    �  FROM AI TO AI                           �
-�   Autonomous, high-precision React component system        �
-�                                                            �
-+------------------------------------------------------------+
-
- ? [1/4] Found tailwind.config.js & index.css
- ? [2/4] Configured global --radius: 1.25rem token
- ? [3/4] Installed peer dependencies (framer-motion lucide-react clsx tailwind-merge recharts)
- ? [4/4] Created src/components/ui and src/lib/utils.ts
-
- ? Success: Component button installed ready to import:
-  import { Button } from "@/components/ui/button";
-```
-
----
-
-## ?? Discrete Import Pattern
+## Discrete Import Pattern
 
 Import single components directly without bundling monolithic dependencies:
 
@@ -92,7 +71,7 @@ export default function Dashboard() {
 
 ---
 
-## ?? Core Design Principles
+## Core Design Principles
 
 | Feature | Specification |
 |---|---|
@@ -104,124 +83,124 @@ export default function Dashboard() {
 
 ---
 
-## ?? Complete Component Catalog (66 Components)
+## Complete Component Catalog (66 Components)
 
 <details open>
 <summary><b>1. Forms & Inputs (22 Components)</b></summary>
 
-- ?? **`button`**: Primary, secondary, outline, ghost pill buttons with active spring tap physics.
-- ?? **`button-group`**: Segmented connected pill buttons (`Days`, `Months`, `Years`).
-- ?? **`checkbox`**: Toggle checkbox with spring checkmark animation.
-- ??? **`switch`**: Tactile toggle switch with centered sliding circular knob.
-- ??? **`slider`**: Range slider with rounded rectangle thumb.
-- ?? **`input`**: Clean text input with prefix/suffix icon slots.
-- ?? **`input-group`**: Seamless capsule input with prefix and action addon buttons.
-- ?? **`input-otp`**: 6-digit 2FA verification input with active ring and blinking cursor.
-- ?? **`search-bar`**: Pill search input with `?K` badge and clear action.
-- ?? **`textarea`**: Multi-line text field with character count indicator.
-- ?? **`select`**: Custom dropdown select with checkmarks and descriptions.
-- ?? **`native-select`**: Styled HTML native select with dark menu styling.
-- ?? **`combobox`**: Searchable autocomplete dropdown with fuzzy filtering.
-- ?? **`radio-group`**: Single-choice radio options with centered indicator dot.
-- ?? **`toggle`**: Two-state pill toggle button with spring physics.
-- ?? **`toggle-group`**: Segmented toggle options with sliding background pill.
-- ?? **`calendar`**: Monthly date picker grid with keyboard navigation.
-- ?? **`date-picker`**: Popover date selector with formatted input trigger.
-- ??? **`field`**: Form field container with label, required asterisk, and hint.
-- ?? **`label`**: Form label with optional/required indicators.
-- ?? **`questionnaire`**: Multi-step survey card with radio selection.
-- ?? **`attachment`**: File upload dropzone with monochrome progress bars.
+- **`button-group`**: Segmented connected pill buttons (`Days`, `Months`, `Years`).
+- **`checkbox`**: Toggle checkbox with spring checkmark animation.
+- **`switch`**: Tactile toggle switch with centered sliding circular knob.
+- **`slider`**: Range slider with rounded rectangle thumb.
+- **`button`**: Primary, secondary, outline, ghost pill buttons with active spring tap physics.
+- **`input`**: Clean text input with prefix/suffix icon slots.
+- **`input-group`**: Seamless capsule input with prefix and action addon buttons.
+- **`input-otp`**: 6-digit 2FA verification input with active ring and blinking cursor.
+- **`search-bar`**: Pill search input with `?K` badge and clear action.
+- **`textarea`**: Multi-line text field with character count indicator.
+- **`select`**: Custom dropdown select with checkmarks and descriptions.
+- **`native-select`**: Styled HTML native select with dark menu styling.
+- **`combobox`**: Searchable autocomplete dropdown with fuzzy filtering.
+- **`radio-group`**: Single-choice radio options with centered indicator dot.
+- **`toggle`**: Two-state pill toggle button with spring physics.
+- **`toggle-group`**: Segmented toggle options with sliding background pill.
+- **`calendar`**: Monthly date picker grid with keyboard navigation.
+- **`date-picker`**: Popover date selector with formatted input trigger.
+- **`field`**: Form field container with label, required asterisk, and hint.
+- **`label`**: Form label with optional/required indicators.
+- **`questionnaire`**: Multi-step survey card with radio selection.
+- **`attachment`**: File upload dropzone with monochrome progress bars.
 
 </details>
 
 <details open>
 <summary><b>2. Data Display (11 Components)</b></summary>
 
-- ?? **`avatar`**: User portrait preview with stacked initials fallback and status dot.
-- ??? **`badge`**: Status indicator pill (default, secondary, outline, dot, counter).
-- ?? **`card`**: Dark card container with header, content, and footer slots.
-- ?? **`code-block`**: Multi-color syntax highlighter with language dropdown and copy button.
-- ?? **`data-table`**: Sortable table with search bar and pagination.
-- ?? **`empty`**: Empty state banner with icon, text, and action button.
-- ?? **`item`**: Minimalist row item with icon, title, description, and badge.
-- ?? **`kbd`**: Keyboard shortcut pill badge (`?K`, `Ctrl+S`).
-- ?? **`marker`**: Status indicator dot with subtle 3s pulse.
-- ?? **`table`**: Monochrome table with header, striped rows, and cell padding.
-- ?? **`typography`**: Typographic scale components (h1, h2, h3, h4, p, lead, code).
+- **`avatar`**: User portrait preview with stacked initials fallback and status dot.
+- **`badge`**: Status indicator pill (default, secondary, outline, dot, counter).
+- **`card`**: Dark card container with header, content, and footer slots.
+- **`code-block`**: Multi-color syntax highlighter with language dropdown and copy button.
+- **`data-table`**: Sortable table with search bar and pagination.
+- **`empty`**: Empty state banner with icon, text, and action button.
+- **`item`**: Minimalist row item with icon, title, description, and badge.
+- **`kbd`**: Keyboard shortcut pill badge (`?K`, `Ctrl+S`).
+- **`marker`**: Status indicator dot with subtle 3s pulse.
+- **`table`**: Monochrome table with header, striped rows, and cell padding.
+- **`typography`**: Typographic scale components (h1, h2, h3, h4, p, lead, code).
 
 </details>
 
 <details open>
 <summary><b>3. Feedback & Status (5 Components)</b></summary>
 
-- ?? **`alert`**: Status notification banner.
-- ? **`progress`**: Standalone rounded-full progress bar.
-- ?? **`skeleton`**: Loading placeholder with shimmer animation.
-- ?? **`spinner`**: Loading indicators (ring, dots, bars).
-- ?? **`toast`**: Imperative toast notification dispatcher.
+- **`alert`**: Status notification banner.
+- **`progress`**: Standalone rounded-full progress bar.
+- **`skeleton`**: Loading placeholder with shimmer animation.
+- **`spinner`**: Loading indicators (ring, dots, bars).
+- **`toast`**: Imperative toast notification dispatcher.
 
 </details>
 
 <details open>
 <summary><b>4. Navigation (5 Components)</b></summary>
 
-- ?? **`breadcrumb`**: Hierarchical page trail links.
-- ?? **`menubar`**: Desktop floating menu bar with nested dropdowns.
-- ?? **`navigation-menu`**: Header text navigation with dropdown flyouts.
-- ?? **`pagination`**: Page switcher with active pill indicator.
-- ?? **`sidebar`**: Navigation sidebar with active item indicators.
+- **`breadcrumb`**: Hierarchical page trail links.
+- **`menubar`**: Desktop floating menu bar with nested dropdowns.
+- **`navigation-menu`**: Header text navigation with dropdown flyouts.
+- **`pagination`**: Page switcher with active pill indicator.
+- **`sidebar`**: Navigation sidebar with active item indicators.
 
 </details>
 
 <details open>
 <summary><b>5. Overlay & Modals (10 Components)</b></summary>
 
-- ?? **`alert-dialog`**: Modal confirmation dialog for destructive actions.
-- ? **`command`**: Modern rectangular command palette with search and keyboard navigation.
-- ??? **`context-menu`**: Cursor-anchored right-click menu.
-- ?? **`dialog`**: Modal window with backdrop blur and action slots.
-- ?? **`drawer`**: Swipeable bottom sheet with touch drag-to-dismiss physics.
-- ?? **`dropdown-menu`**: Trigger-anchored action dropdown.
-- ?? **`hover-card`**: Popover card triggered on cursor hover.
-- ?? **`popover`**: Floating container anchored to trigger button.
-- ?? **`sheet`**: Slide-over side sheet panel.
-- ?? **`tooltip`**: Compact black pill tooltip with white text.
+- **`alert-dialog`**: Modal confirmation dialog for destructive actions.
+- **`command`**: Modern rectangular command palette with search and keyboard navigation.
+- **`context-menu`**: Cursor-anchored right-click menu.
+- **`dialog`**: Modal window with backdrop blur and action slots.
+- **`drawer`**: Swipeable bottom sheet with touch drag-to-dismiss physics.
+- **`dropdown-menu`**: Trigger-anchored action dropdown.
+- **`hover-card`**: Popover card triggered on cursor hover.
+- **`popover`**: Floating container anchored to trigger button.
+- **`sheet`**: Slide-over side sheet panel.
+- **`tooltip`**: Compact black pill tooltip with white text.
 
 </details>
 
 <details open>
 <summary><b>6. Layout & Structure (8 Components)</b></summary>
 
-- ?? **`accordion`**: Collapsible panels with spring height animation.
-- ??? **`aspect-ratio`**: Media container with fixed aspect ratio and rounded corners.
-- ?? **`collapsible`**: Expandable disclosure panel with smooth height transitions.
-- ?? **`direction`**: LTR / RTL text direction container.
-- ?? **`resizable`**: Draggable split-pane layout container.
-- ?? **`scroll-area`**: Custom scroll container with slim scrollbar.
-- ? **`separator`**: 1px divider line with optional centered text.
-- ?? **`tabs`**: Tab navigation with sliding active pill indicator.
+- **`accordion`**: Collapsible panels with spring height animation.
+- **`aspect-ratio`**: Media container with fixed aspect ratio and rounded corners.
+- **`collapsible`**: Expandable disclosure panel with smooth height transitions.
+- **`direction`**: LTR / RTL text direction container.
+- **`resizable`**: Draggable split-pane layout container.
+- **`scroll-area`**: Custom scroll container with slim scrollbar.
+- **`separator`**: 1px divider line with optional centered text.
+- **`tabs`**: Tab navigation with sliding active pill indicator.
 
 </details>
 
 <details open>
 <summary><b>7. Charts & Metrics (1 Component)</b></summary>
 
-- ?? **`chart`**: Recharts wrapper with hover highlights (Bar, Area, Line, Donut, Radar, Sparkline).
+- **`chart`**: Recharts wrapper with hover highlights (Bar, Area, Line, Donut, Radar, Sparkline).
 
 </details>
 
 <details open>
 <summary><b>8. Chat & Messaging (3 Components)</b></summary>
 
-- ??? **`bubble`**: Speech bubble with sender/receiver tails.
-- ?? **`message`**: Developer chat card with avatar and timestamp.
-- ?? **`message-scroller`**: Auto-scrolling chat message list.
+- **`bubble`**: Speech bubble with sender/receiver tails.
+- **`message`**: Developer chat card with avatar and timestamp.
+- **`message-scroller`**: Auto-scrolling chat message list.
 
 </details>
 
 ---
 
-## ?? Agent & LLM Integration
+## Agent & LLM Integration
 
 AI2AI UI is designed from the ground up to be indexed and operated by autonomous AI coding assistants:
 
@@ -230,20 +209,6 @@ AI2AI UI is designed from the ground up to be indexed and operated by autonomous
 
 ---
 
-## ?? NPM Publishing
+## License
 
-To publish or update this package on the global npm registry:
-
-```bash
-# 1. Login to your npm account (run once in terminal)
-npm login
-
-# 2. Publish package to public registry
-npm publish --access public
-```
-
----
-
-## ?? License
-
-MIT License � 2026 duckky-green. Free for personal, open-source, and commercial use.
+MIT License ©️2026 AlwaysItsPeace. Free for personal, open-source, and commercial use.
